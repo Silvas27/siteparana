@@ -1,110 +1,114 @@
-/* Reset de Margens e Padding */
-* {
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-color: #181818; /* Fundo escuro */
+    color: #f3f3f3; /* Texto claro */
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-/* Corpo da Página */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #1a1a1a; /* Fundo escuro */
-    color: #f5f5f5; /* Texto claro */
-}
-
-/* Cabeçalho */
 header {
-    background-color: #252525; /* Cabeçalho escuro */
+    background-color: #242424; /* Cabeçalho escuro */
+    color: #f3f3f3; /* Texto claro */
     padding: 20px;
     text-align: center;
+    border-bottom: 2px solid #444; /* Borda inferior */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-/* Navegação */
-nav {
-    margin: 20px 0;
+header h1 {
+    margin: 0;
+    font-size: 2.2em; /* Tamanho do título */
+    font-weight: 500;
 }
 
-nav a {
-    color: #f5f5f5; /* Cor dos links */
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background 0.3s, color 0.3s;
+header p {
+    font-size: 1.1em;
+    margin-top: 5px;
 }
 
-nav a:hover {
-    background-color: #f25c93; /* Cor ao passar o mouse */
-    color: #fff;
-}
-
-/* Caixas de Conteúdo */
-.content-box {
-    background-color: #2a2a2a; /* Cor de fundo das caixas */
-    border-radius: 10px;
-    padding: 20px;
+main {
+    max-width: 600px; /* Largura máxima do main */
     margin: 20px auto;
-    max-width: 600px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
 }
 
-/* Botões */
-button {
+.message-form {
+    display: flex; /* Flexbox para alinhamento */
+    flex-direction: column; /* Alinhamento vertical */
+    background-color: #2c2c2c; /* Fundo da seção do formulário */
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.message-form textarea {
+    width: 100%; /* Largura total */
+    padding: 10px;
+    border: 1px solid #444; /* Borda mais escura */
+    border-radius: 5px;
+    resize: none; /* Impede o redimensionamento */
+    margin-bottom: 10px;
+    font-size: 1em;
+    background-color: #383838; /* Fundo da textarea */
+    color: #f3f3f3; /* Texto claro */
+}
+
+.message-form button {
     background-color: #f25c93; /* Cor do botão */
-    color: #fff; /* Texto do botão */
+    color: white;
+    padding: 10px;
     border: none;
     border-radius: 5px;
-    padding: 10px 20px;
     cursor: pointer;
-    transition: background 0.3s;
+    font-size: 1em;
+    transition: background-color 0.3s;
 }
 
-button:hover {
-    background-color: #f20505; /* Cor do botão ao passar o mouse */
+.message-form button:hover {
+    background-color: #e24c84; /* Cor ao passar o mouse */
 }
 
-/* Rodapé */
-footer {
-    background-color: #252525; /* Rodapé escuro */
+.messages-display {
+    background-color: #2c2c2c; /* Fundo das mensagens */
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.messages-display h2 {
+    font-size: 1.5em; /* Título das mensagens */
+    margin-bottom: 15px;
+}
+
+.message {
     padding: 10px;
-    text-align: center;
-}
-
-/* Imagens */
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* Estilos para a seção de mensagens */
-.message-box {
-    background-color: #333; /* Fundo das mensagens */
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 600px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-/* Estilo do formulário */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-/* Estilo dos campos de entrada */
-input[type="text"],
-input[type="email"],
-textarea {
-    padding: 10px;
-    border: none;
     border-radius: 5px;
-    background-color: #444; /* Fundo dos campos de entrada */
-    color: #fff; /* Texto dos campos de entrada */
+    margin-bottom: 10px;
+    color: #333; /* Texto escuro nas mensagens */
 }
 
-/* Estilo dos botões no formulário */
-form button {
-    align-self: flex-end; /* Alinha o botão à direita */
+.message.sender {
+    background-color: #d1e7dd; /* Cor para mensagens enviadas */
+    text-align: right;
+}
+
+.message.receiver {
+    background-color: #f8d7da; /* Cor para mensagens recebidas */
+    text-align: left;
+}
+
+#messagesContainer {
+    max-height: 400px; /* Altura máxima para scroll */
+    overflow-y: auto; /* Habilita a rolagem */
+}
+
+footer {
+    background-color: #242424; /* Rodapé escuro */
+    color: #f3f3f3; /* Texto claro */
+    text-align: center;
+    padding: 15px;
+    position: relative; /* Ajuste a posição */
+    margin-top: 20px; /* Margem superior para espaçamento */
+    font-size: 1em;
 }
