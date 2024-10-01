@@ -75,3 +75,36 @@ img {
     height: auto;
     border-radius: 10px;
 }
+
+/* Estilos para a seção de mensagens */
+.message-box {
+    background-color: #333; /* Fundo das mensagens */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Estilo dos campos de entrada */
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444; /* Fundo dos campos de entrada */
+    color: #fff; /* Texto dos campos de entrada */
+}
+
+/* Estilo dos botões no formulário */
+form button {
+    align-self: flex-end; /* Alinha o botão à direita */
+}
