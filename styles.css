@@ -1,0 +1,85 @@
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-color: #f3f3f3;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #c4c2bc;
+    color: #333;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 2px solid #b4b4ac;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8em;
+    font-weight: 400;
+}
+
+header p {
+    font-size: 1.3em;
+    margin-top: 10px;
+}
+
+section {
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 900px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+section h2 {
+    color: #7c7474;
+    font-size: 2.4em;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #94938d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #b4acac;
+}
+
+footer {
+    background-color: #6c6c6c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 1em;
+}
+
+section {
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 900px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    cursor: pointer; /* Adicionado para indicar que é clicável */
+    transition: background-color 0.3s;
+}
+
+section:hover {
+    background-color: #f0f0f0; /* Cor ao passar o mouse */
+}
+.message {
+    background-color: #e3f2fd; /* Cor de fundo para as mensagens */
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+}
